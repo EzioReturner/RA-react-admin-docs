@@ -6,6 +6,7 @@
   * [样式与主题](/cssStyle)
 * 进阶
   * [骨架&布局](/skeleton)
+  * [主题](/theme)
   * [权限控制](/authority)
   * [过渡效果](/transition)
   * [国际化](/i18n)
