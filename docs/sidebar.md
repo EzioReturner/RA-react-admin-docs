@@ -5,7 +5,7 @@
   * [路由与菜单](/router)
   * [样式与主题](/cssStyle)
 * 进阶
-  * [骨架&布局](/skeleton)
+  * [layout & 布局](/layout)
   * [主题](/theme)
   * [权限控制](/authority)
   * [过渡效果](/transition)

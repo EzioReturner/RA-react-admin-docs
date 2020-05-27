@@ -2,13 +2,17 @@
 
 RA中提供了，两种过渡类组件，分别是 `WrapAnimation` 过渡动画组件，`loading` 过渡遮罩组件。
 
+</br>
+
+ <img alt="loading" style="box-shadow: 0 3px 20px 0 rgba(189, 189, 189, 0.6);border-radius: 5px;" src="./media/loading.gif">
+
 ## WrapAnimation 过渡动画组件
 
 `WrapAnimation` 组件基于 [react-transition-group](https://github.com/reactjs/react-transition-group) 封装，RA的路由实现中，将会默认对所有的路由包裹 `WrapAnimation` 组件，支持 [animate.css](https://daneden.github.io/animate.css/) 库，与自定义过渡。
 
 ### 使用自定义过渡
 
- - 将过渡效果css放置在 `WrapAnimation/wrapAnimation.scss`[![](/media/link.svg)](https://github.com/EzioReturner/RATurbo-react-admin/tree/master/src/style/wrapAnimation.scss) 中，格式如下：
+ - 将过渡效果css放置在 `WrapAnimation/wrapAnimation.scss` 中，格式如下：
  ```css
   .my-node-enter {
     opacity: 0;
@@ -82,4 +86,3 @@ interface LoadingOptions {
 };
 ```
 
-![loading](/media/loading.gif)

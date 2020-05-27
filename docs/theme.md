@@ -16,7 +16,8 @@ theme: {
 
 ## 动态主题
 
-![theme](/media/theme.gif)
+
+ <img alt="theme" style="box-shadow: 0 3px 20px 0 rgba(189, 189, 189, 0.6);border-radius: 5px;" src="./media/theme.gif">
 
 RA设计规范和技术上支持灵活的样式定制，以满足业务和品牌上多样化的视觉需求，包括但不限于全局样式（主色、圆角、边框）和指定组件的视觉定制。
 
@@ -91,10 +92,10 @@ RA中提供了暗黑风格的视觉模式，暗黑模式更多的目的是希望
 
 而夜间模式则更多是出于在夜间或暗光环境使用下的健康角度考虑，避免在黑暗环境中长时间注视高亮光源带来的视觉刺激，所以在保证可读性的前提下，会采用更弱的对比来减少屏幕光对眼睛的刺激。
 
-![darkTheme](/media/darkTheme.png)
+ <img alt="darkTheme" style="box-shadow: 0 3px 20px 0 rgba(189, 189, 189, 0.6);border-radius: 5px;" src="./media/darkTheme.png">
 
 ### 如何使用
 
-非常简单，设置用 `layoutStore` 中的 layoutStatus.visionTheme 为 dark， 并在调用 changeVisionTheme 方法即可，或渲染 `layoutSetting` 组件并切换暗黑模式。
+非常简单，设置用 `layoutStore` 中的 layoutStatus.visionTheme 为 dark， 并调用 changeVisionTheme 方法即可，或通过 `layoutSetting` 组件点击切换暗黑模式。
 
 > tips: RA为了适配Antd组件，补充了较多暗黑模式的样式，位于 `styles/darkTheme.less` 中。

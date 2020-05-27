@@ -21,15 +21,19 @@ createType: ···exampleView··· created
 ...
 ```
 
-之后我们前往 `src/views` 目录下，一个基础的页面 `tsx、scss` 文件已生成，样式默认使用 `CSS Module` ，可参考 [样式与主题](/cssStyle)
+之后我们前往 `src/views` 目录下，一个基础的页面 `tsx、less` 文件已生成，样式默认使用 `CSS Module` ，可参考 [样式与主题](/cssStyle)
 
-![addView](/media/addview.png)。
+</br>
 
+<img alt="addview" style="box-shadow: 0 3px 20px 0 rgba(189, 189, 189, 0.6);border-radius: 5px;" src="./media/addview.png">
+
+</br>
+</br>
 
 并附带了基础代码
 ```javascript
 import React, { Component } from 'react'; 
-import style from './index.module.scss'; 
+import style from './index.module.less'; 
 
 class ExampleView extends Component {
 	render() {
@@ -51,7 +55,7 @@ yarn raCreate -v exampleFC -fc
 
 ```javascript
 import React from 'react';
-import style from './index.module.scss';
+import style from './index.module.less';
 
 interface ExampleFCProps {}
 
@@ -77,7 +81,7 @@ yarn raCreate -v examplePage -page
 import React, { Component } from 'react'; 
 import PageWrapper from '@components/PageWrapper'; 
 import FormatterLocale from '@components/FormatterLocale'; 
-import style from './index.module.scss'; 
+import style from './index.module.less'; 
 
 class examplePage extends Component { 
   render() {
@@ -92,7 +96,7 @@ export default ExamplePage;
 
 >在路由配置项中添加相应的路由信息，配置过程可参考 [路由与菜单](/router)，之后输入对应的url，我们可以看到如下页面，一个附带header头部，body，以及面包屑的基础页面已经生成。
 
-![examplePage](/media/examplePage.png)
+ <img alt="examplePage" style="box-shadow: 0 3px 20px 0 rgba(189, 189, 189, 0.6);border-radius: 5px;" src="./media/examplePage.png">
 
 
 ## 新增公共组件
@@ -132,6 +136,6 @@ yarn raCreate -c exampleComponent
 
 - 类型： `string` 或者 `ReactDOM`
 
-详细对应可参考下图，具体使用代码参考 `src/views/List/CardList.jsx`[![](/media/link.svg)](https://github.com/EzioReturner/RATurbo-react-admin/blob/master/src/views/List/CardList.jsx) 文件。
+详细对应可参考下图，具体使用代码参考 `src/views/List/CardList.jsx` 文件。
 
-![pageHeader](/media/pageHeader.png)
+<img alt="pageHeader" style="box-shadow: 0 3px 20px 0 rgba(189, 189, 189, 0.6);border-radius: 5px;" src="./media/pageHeader.png">

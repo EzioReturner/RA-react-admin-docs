@@ -1,6 +1,6 @@
 # 快速上手
 
-> 在开始之前，推荐先学习 [React](https://reactjs.org/) 、 [ES2015+](http://es6.ruanyifeng.com/)、 [Mobx](https://mobx.js.org/)、  [Antd Design](https://ant.design/docs/react/introduce-cn), 并正确安装和配置了 Node.js v8 或以上 、Git。提前了解和学习这些知识会非常有帮助。
+> 在开始之前，推荐先学习 [React](https://reactjs.org/) 、 [ES2015+](http://es6.ruanyifeng.com/)、 [Mobx](https://mobx.js.org/)、  [Antd Design](https://ant.design/docs/react/introduce-cn), 并正确安装和配置了 Node.js v10 或以上 、Git。提前了解和学习这些知识会非常有帮助。
 
 ## 安装
 
@@ -12,8 +12,9 @@ cd RATurbo-react-admin
 ## 功能模块
 
 ```bash
-- 首页
-    - 完整布局
+- 布局
+    - 分列式布局
+    - 一体式布局
 - 导航菜单
     - 顶部导航
     - 左侧菜单
@@ -30,7 +31,7 @@ cd RATurbo-react-admin
     - loading遮罩模块
     - i18n 国际化
       - 支持多语言翻译
-    - 简易封装了echarts
+    - echarts组件
 - UI组件
     - 场景
       - 分析页
@@ -58,8 +59,9 @@ cd RATurbo-react-admin
 
 ```bash
 ├── build                   // 打包的文件目录
-├── public                  // 静态资源目录
+├── e2e                     // e2e测试文件夹
 ├── node_modules            // 黑洞
+├── public                  // 静态资源目录
 ├── scripts                 // 自动化脚本
 ├── src                     // 项目目录
 │    ├── api                // 接口目录
@@ -68,16 +70,21 @@ cd RATurbo-react-admin
 │    ├── config             // 配置项目录
 │    ├── layout             // 布局目录
 │    ├── locales            // 国际化文件目录
+│    ├── models             // ts 接口声明
 │    ├── store              // mobx目录
 │    ├── style              // 全局样式目录
 │    ├── utlis              // 工具函数目录
-│    ├── view               // 页面组件目录
+│    ├── views              // 页面组件目录
 │    └── index.tsx          // 入口文件
 ├── webpack                 // webpack 配置
 ├── .babelrc.js             // babelrc 配置
 ├── .eslintrc.js            // eslint 配置
 ├── .gitignore              // git 忽略项
 ├── .prettierignore         // prettier 忽略项
+├── .yarnrc                 // yarn 配置项
+├── jest-puppeteer.config   // jest-puppeteer 配置项
+├── jest.config             // jest 配置项
+├── jest.setup.config       // jest 入口文件
 ├── package.json            // npm 项目及依赖说明
 ├── README.md               // 项目说明
 ├── tsconfig.json           // ts 配置
@@ -97,10 +104,12 @@ yarn install
 yarn start
 ```
 
-> 当看到如下界面，就表示项目已经启动。 tips: 3.0之后的版本已不再实用webpack-dashboard启动项目
+当看到如下界面，就表示项目已经启动。 
 
-![terminal](/media/terminal.png)
+ <img alt="terminal" style="box-shadow: 0 3px 20px 0 rgba(189, 189, 189, 0.6);border-radius: 5px;" src="./media/terminal.png">
 
-> 启动完成后打开浏览器访问 [http://localhost:9527](http://localhost:9527)，如果需要更改启动端口，可在 .env 文件中配置。
+启动完成后打开浏览器访问 [http://localhost:9527](http://localhost:9527)
 
-![dashboard](/media/dashboard.png)
+ <img alt="split-layout" style="box-shadow: 0 3px 20px 0 rgba(189, 189, 189, 0.6);border-radius: 5px;" src="./media/splitLayout.png">
+ 
+> 如果需要更改启动端口，可在 .env 文件中配置。
