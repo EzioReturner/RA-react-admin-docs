@@ -10,7 +10,7 @@ RA使用 less 作为样式语言，建议在使用前或者遇到疑问时学习
 
 `全局污染`，`选择器复杂` 为解决这两个问题，RA提供了CSS Modules 模块化方案，使用方法如下：
 
-> 默认webpack只对 `.module.scss` 命名的文件解析为 css modules
+> 默认webpack只对 `.module.less` 命名的文件解析为 css modules
 
 ```javascript
 import styles from './style.module.less';

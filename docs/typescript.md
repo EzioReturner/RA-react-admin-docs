@@ -17,13 +17,13 @@ tsconfig 会声明这是一个 TypeScript 的项目，其中会进行一些配�
 RA 中支持了 css-module，如果你在 TypeScript 文件中使用：
 
 ```javascript
-import style from './index.module.scss';
+import style from './index.module.less';
 ```
 
 这时 TypeScript 会报错，可以替换成：
 
 ```javascript
-const style = require('./index.module.scss');
+const style = require('./index.module.less');
 ```
 
 ### alias 路径配置
@@ -43,7 +43,7 @@ const style = require('./index.module.scss');
 
 ```javascript
 import React, { Component } from 'react';
-const style = require('./index.module.scss');
+const style = require('./index.module.less');
 
 interface TitleProps {
   title: string;

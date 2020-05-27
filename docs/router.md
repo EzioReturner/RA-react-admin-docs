@@ -45,7 +45,7 @@ RA中的路由，通过 `router.config.tsx` 统一进行管理。我们提供了
 
 ###  菜单
 
-菜单会根据 `router.config.tsx` 自动生成，具体实现在 `components/Layout/SiderMenu.jsx`。
+菜单会根据 `router.config.tsx` 自动生成，具体实现在 `components/Layout/SiderMenu.tsx`。
 
 > 如果你的项目不需要菜单，你可以在 [系统配置](/setting) 中设置 `useMenu` 为 `false`
 

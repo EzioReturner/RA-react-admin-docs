@@ -75,7 +75,7 @@ export default ExampleFC;
 yarn raCreate -v examplePage -page
 ```
 
-打开文件后 `examplePage.jsx` 文件我们将看到如下代码：
+打开文件后 `examplePage.tsx` 文件我们将看到如下代码：
 
 ```javascript
 import React, { Component } from 'react'; 
@@ -136,6 +136,6 @@ yarn raCreate -c exampleComponent
 
 - 类型： `string` 或者 `ReactDOM`
 
-详细对应可参考下图，具体使用代码参考 `src/views/List/CardList.jsx` 文件。
+详细对应可参考下图，具体使用代码参考 `src/views/List/CardList.tsx` 文件。
 
 <img alt="pageHeader" style="box-shadow: 0 3px 20px 0 rgba(189, 189, 189, 0.6);border-radius: 5px;" src="./media/pageHeader.png">
