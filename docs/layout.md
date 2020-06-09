@@ -6,7 +6,6 @@ Layout 组件一般的组件不同，它非常重型，在其中集成了 菜单
 
 RA 中，默认使用了 splitLayout 分列布局，启动后我们可以看到这样的界面。
 
-</br>
 
  <img alt="split-layout" style="box-shadow: 0 3px 20px 0 rgba(189, 189, 189, 0.6);border-radius: 5px;margin: 30px 0;" src="./media/splitLayout.png">
 
@@ -63,3 +62,45 @@ interface LayoutStatus extends StoreKeyValue {
 通过设置 layoutStatus 的 navigateMode 属性为 `horizontal` 即可。
 
 <img alt="topNavigator" style="box-shadow: 0 3px 20px 0 rgba(189, 189, 189, 0.6);border-radius: 5px;margin: 30px 0;" src="./media/topNavigator.png">
+
+## 如何使用
+
+在页面中引入 `BasicLayout` 组件即可，children将填充内容渲染区域。
+
+```javascript
+import BasicLayout from '@components/Layout/BasicLayout';
+
+const MainSkeleton: React.FC = props => {
+  return (
+    <BasicLayout
+      {...{
+        isHorizontalNavigator: true
+      }}
+    >
+      {<div>view</div>}
+    </BasicLayout>
+  );
+};
+export default MainSkeleton;
+```
+</br>
+
+`BasicLayout` 支持参数
+
+- isHorizontalNavigator `boolean` 
+
+  使用顶部导航，默认为 `false`.
+
+- siderBar `React.ReactNode`
+
+  传入将替换RA基于路由表自动渲染的菜单，默认为空
+
+- siteLogo `React.ReactNode`
+
+  传入将替换项目logo区域，默认为空
+
+- header `React.ReactNode`
+
+  传入将替换header区域所有内容，默认为空
+
+> 可参考 `src/skeleton/Main.tsx`
