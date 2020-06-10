@@ -62,17 +62,45 @@ describe('login', () => {
 yarn test:e2e
 
 yarn run v1.13.0
-$ jest -c src/e2e/jest.config.js
- PASS  src/e2e/404.e2e.js (8.793s)
- PASS  src/e2e/login.e2e.js (12.784s)
- PASS  src/e2e/mainLayout.e2e.js (35.631s)
+$ jest -c e2e/jest.config.js
+ PASS  e2e/404.e2e.js (8.564s)
+  404
+    ✓ test route 404 (435ms)
+
+ PASS  e2e/login.e2e.js (11.638s)
+  login
+    ✓ should login with success (4167ms)
+    ✓ should login with failure (1826ms)
+
+ PASS  e2e/skeleton.e2e.js (35.626s)
+  mainLayout
+    ✓ test pages / (1857ms)
+    ✓ test pages /dashboard (1014ms)
+    ✓ test pages /program/analysis (1544ms)
+    ✓ test pages /program/monitor (1790ms)
+    ✓ test pages /program/platform (1360ms)
+    ✓ test pages /program/unit (1600ms)
+    ✓ test pages /form/basicForm (1341ms)
+    ✓ test pages /form/stepForm (1148ms)
+    ✓ test pages /form/test/test1 (1077ms)
+    ✓ test pages /list/basicList (1150ms)
+    ✓ test pages /list/cardList (1082ms)
+    ✓ test pages /list/basicTable (1120ms)
+    ✓ test pages /map (1099ms)
+    ✓ test pages /gallery (1503ms)
+    ✓ test pages /result/successResult (1121ms)
+    ✓ test pages /result/failedResult (1080ms)
+    ✓ test pages /exception/403 (1052ms)
+    ✓ test pages /exception/404 (1059ms)
+    ✓ test pages /exception/500 (1050ms)
+    ✓ test pages /exception/home (1067ms)
 
 Test Suites: 3 passed, 3 total
-Tests:       24 passed, 24 total
+Tests:       23 passed, 23 total
 Snapshots:   0 total
-Time:        36.894s
+Time:        36.381s
 Ran all test suites.
-✨  Done in 40.82s.
+✨  Done in 40.66s.
 ```
 
 > 需要注意的是，执行e2e测试时，需要启动前端服务。
@@ -118,14 +146,35 @@ yarn test:unit
 
 yarn run v1.13.0
 $ jest -c jest.config.js
- PASS  src/components/HighLight/index.test.js (6.36s)
-  Highlight
-    ✓ highlight text (44ms)
+ PASS  src/components/Authorized/checkpermission.test.js (5.065s)
+  test CheckPermissions
+    ✓ Correct string permission authentication (2ms)
+    ✓ Correct string permission authentication (1ms)
+    ✓ authority is undefined , return ok
+    ✓ currentAuthority is undefined , return error
+    ✓ Wrong string permission authentication
+    ✓ Correct Array permission authentication
+    ✓ Wrong Array permission authentication,currentAuthority error
+    ✓ Wrong Array permission authentication
+    ✓ authority is string, currentAuthority is array, return ok (1ms)
+    ✓ authority is string, currentAuthority is array, return ok
+    ✓ authority is array, currentAuthority is array, return ok
+    ✓ authority is undefined , return ok
 
-Test Suites: 1 passed, 1 total
-Tests:       1 passed, 1 total
+ PASS  src/components/HighLight/highlight.test.js (5.237s)
+  Highlight
+    ✓ highlight text (51ms)
+
+ PASS  src/components/Layout/BasicLayout/basicLayout.test.js (10.494s)
+  BasicLayout
+    ✓ BasicLayout change header (144ms)
+    ✓ BasicLayout change siderBar (23ms)
+    ✓ BasicLayout change siteLogo (43ms)
+
+Test Suites: 3 passed, 3 total
+Tests:       16 passed, 16 total
 Snapshots:   0 total
-Time:        6.443s
+Time:        11.37s, estimated 14s
 Ran all test suites.
-✨  Done in 12.00s.
+✨  Done in 14.19s.
 ```
