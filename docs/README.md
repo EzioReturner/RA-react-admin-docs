@@ -12,7 +12,7 @@
 
 ## 在线预览
 
-- [ra-turbo](http://ra-turbo.leanapp.cn)
+- [ra-turbo](https://ezioreturner.github.io/RATurbo-dist/dist/index.html#/dashboard)
 
 ## 依赖模块
 
