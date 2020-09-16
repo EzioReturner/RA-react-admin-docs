@@ -1,6 +1,6 @@
 # 快速上手
 
-> 在开始之前，推荐先学习 [React](https://reactjs.org/) 、 [ES2015+](http://es6.ruanyifeng.com/)、 [Mobx](https://mobx.js.org/)、  [Antd Design](https://ant.design/docs/react/introduce-cn), 并正确安装和配置了 Node.js v10 或以上 、Git。提前了解和学习这些知识会非常有帮助。
+> 在开始之前，推荐先学习 [React](https://reactjs.org/) 、 [ES2015+](http://es6.ruanyifeng.com/)、 [Mobx](https://mobx.js.org/)、  [Antd Design](https://ant.design/docs/react/introduce-cn), 并正确安装和配置了 [Node.js](https://nodejs.org/zh-cn/) v10 或以上 、[Git](https://git-scm.com/)。提前了解和学习这些知识会非常有帮助。
 
 ## 安装
 
@@ -58,7 +58,7 @@ cd RATurbo-react-admin
 本应用的目录结构如下
 
 ```bash
-├── build                   // 打包的文件目录
+├── build                   // 默认打包输出目录
 ├── e2e                     // e2e测试文件夹
 ├── node_modules            // 黑洞
 ├── public                  // 静态资源目录
@@ -94,7 +94,7 @@ cd RATurbo-react-admin
 ## 本地开发
 推荐使用yarn，若使用npm安装过慢可使用淘宝镜像
 
-1.进入项目目录
+1.安装依赖
 ```bash
 yarn install
 ```

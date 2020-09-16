@@ -1,16 +1,16 @@
 # 新增页面
 
-这里的『页面』指业务组件，或是通用组件，通常要新建一个页面，可以手动在目录下创建目录及文件，或使用内置指令一键生成。
+使用内置指令生成业务或通用『页面』。
 
-## 新增业务模块 
+## 创建class组件
 
-按照RA的约定，我们通常将业务组件放置在`src/views`目录下，我们使用下面的指令创建一个新的业务模块 ：
+按照RA的约定，我们通常将业务组件放置在`src/views`目录下，通过下方指令创建一个业务模块：
 
 ```bash
 yarn raCreate -v exampleView
 ```
 
-之后会在控制台看到以下输出
+在控制台中将看到以下输出：
 
 ```bash
 ...
@@ -21,16 +21,16 @@ createType: ···exampleView··· created
 ...
 ```
 
-之后我们前往 `src/views` 目录下，一个基础的页面 `tsx、less` 文件已生成，样式默认使用 `CSS Module` ，可参考 [样式与主题](/cssStyle)
+在 `src/views` 目录下，将自动生成 ExampleView 文件夹包含`tsx、less` 文件，样式默认使用 `CSS Module` ，可参考 [样式与主题](/cssStyle)
 
 </br>
 
-<img alt="addview" style="box-shadow: 0 3px 20px 0 rgba(189, 189, 189, 0.6);border-radius: 5px;" src="./media/addview.png">
+<img alt="addview" style="box-shadow: 0 3px 20px 0 rgba(189, 189, 189, 0.6);border-radius: 5px;width:300px;" src="./media/addview.png">
 
 </br>
 </br>
 
-并附带了基础代码
+并附带了部分代码
 ```javascript
 import React, { Component } from 'react'; 
 import style from './index.module.less'; 
@@ -45,9 +45,9 @@ export default ExampleView;
 ```
 
 
-### function component 模式的业务模块
+## 创建函数组件
 
-在指令中添加额外配置项 `-fc`  将生成一个function component
+在指令中添加额外配置项 `-fc`  将被创建为函数组件
 
 ```bash
 yarn raCreate -v exampleFC -fc
@@ -67,7 +67,7 @@ export default ExampleFC;
 ```
 
 
-### 定制 page 样式基础模块
+## 定制 page 样式基础模块
 
 在指令中添加额外配置项 `-page` 可以生成附带面包屑以及可定制的header的基础page页面，我们在控制台输入如下代码：
 
@@ -94,9 +94,9 @@ class examplePage extends Component {
 export default ExamplePage;
 ```
 
->在路由配置项中添加相应的路由信息，配置过程可参考 [路由与菜单](/router)，之后输入对应的url，我们可以看到如下页面，一个附带header头部，body，以及面包屑的基础页面已经生成。
+> 访问对应的路由后 [路由与菜单](/router)，我们可以看到如下页面，一个附带header头部，body，以及面包屑的基础页面已经生成。
 
- <img alt="examplePage" style="box-shadow: 0 3px 20px 0 rgba(189, 189, 189, 0.6);border-radius: 5px;" src="./media/examplePage.png">
+ <img alt="examplePage" style="box-shadow: 0 3px 20px 0 rgba(189, 189, 189, 0.6);border-radius: 5px;width:600px;" src="./media/examplePage.png">
 
 
 ## 新增公共组件
@@ -109,7 +109,7 @@ yarn raCreate -c exampleComponent
 
 代码执行后文件将生成在 `src/components` 路径下。
 
-
+<!-- 
 ## PageWrapper组件
 
 >上例中，我们引入了PageWrapper组件，该组件接收以下参数：
@@ -138,4 +138,4 @@ yarn raCreate -c exampleComponent
 
 详细对应可参考下图，具体使用代码参考 `src/views/List/CardList.tsx` 文件。
 
-<img alt="pageHeader" style="box-shadow: 0 3px 20px 0 rgba(189, 189, 189, 0.6);border-radius: 5px;" src="./media/pageHeader.png">
+<img alt="pageHeader" style="box-shadow: 0 3px 20px 0 rgba(189, 189, 189, 0.6);border-radius: 5px;width:600px;" src="./media/pageHeader.png"> -->

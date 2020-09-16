@@ -1,11 +1,11 @@
 * 入门
   * [快速上手](/start)
-  * [新增页面](/addPage)
+  * [新增页面](/createPage)
   * [Http请求](/httpRequest)
   * [路由与菜单](/router)
   * [样式与主题](/cssStyle)
 * 进阶
-  * [layout & 布局](/layout)
+  * [布局](/layout)
   * [主题](/theme)
   * [权限控制](/authority)
   * [过渡效果](/transition)

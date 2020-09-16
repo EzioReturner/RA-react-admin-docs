@@ -4,7 +4,7 @@ RA中，除了常规的启动和构建命令，额外提供了如下几个内置
 
 ## 新增页面 & 组件
 
-> 参考 [新增业务组件](/addPage?id=新增业务组件)
+> 参考 [新增业务组件](/createPage?id=新增业务组件)
 
 ```bash
 yarn raCreate -v exampleView
