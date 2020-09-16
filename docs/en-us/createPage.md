@@ -16,7 +16,7 @@ The following output will show in the console
 ...
 yarn run v1.13.0
 $ node scripts/tools.js -v exampleView
-createType: ···exampleView··· created
+result: ···exampleView··· has been created
 ✨  Done in 0.27s.
 ...
 ```
