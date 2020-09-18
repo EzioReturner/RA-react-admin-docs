@@ -1,12 +1,12 @@
 # 系统配置
 
-可在 `/src/config/setting` 里做一些自定义配置:
+RA提供了一系列自定义配置，可在 `/src/config/setting.js` 文件中自行定义:
 
 ## siteName
 
 - 类型: `string`
 
-  配置站点名称，应用到登录框，侧边栏顶部的标题文字显示以及 index.html 中的 <title> 标签
+  配置站点名称，应用到登录框，侧边栏顶部的标题文字显示以及 index.html 中的 `<title>` 标签
 
 ## copyright
 
@@ -55,6 +55,12 @@
 - 类型: `string`: `max-width` | `flow`
 
   内容区域宽度模式
+
+## useSetting
+
+- 类型: `boolean`
+
+  是否启用系统设置面板
 
 ## useSiteIcon
 
