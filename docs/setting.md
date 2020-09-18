@@ -60,7 +60,9 @@ RA提供了一系列自定义配置，可在 `/src/config/setting.js` 文件中�
 
 - 类型: `boolean`
 
-  是否启用系统设置面板
+  是否启用系统设置面板 
+  
+> tips: 改变该配置需重启项目
 
 ## useSiteIcon
 
