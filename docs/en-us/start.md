@@ -90,5 +90,5 @@ yarn start
 After the startup is complete, open a browser and visit [http://localhost:9527](http://localhost:9527).
 
  <img alt="split-layout" style="box-shadow: 0 3px 20px 0 rgba(189, 189, 189, 0.6);border-radius: 5px;width:600px;" src="./media/splitLayout.png">
- 
+
 > If you need to change the startup port, you can configure it in the .env file.
