@@ -48,7 +48,7 @@ export default ExampleView;
 
 ## Create Function Component
 
-Add additional configuration `-fc` will be created as a functional component
+The additional configuration `-fc` will create a functional component
 
 ```bash
 yarn raCreate -v exampleFC -fc
@@ -70,7 +70,7 @@ export default ExampleFC;
 
 ## Create PageWrapper Hoc Component
 
-Add additional configuration `-page` will be created an Hoc Component with PageWrapper
+The additional configuration `-page` will create an Hoc with PageWrapper Component
 
 ```bash
 yarn raCreate -v examplePage -page
