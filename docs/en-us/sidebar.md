@@ -3,7 +3,7 @@
   * [Create Page](/en-us/createPage)
   * [Http Request](/en-us/httpRequest)
   * [Router And Menu](/en-us/router)
-  * [Style And Theme](/cssStyle)
+  * [Style And Theme](/en-us/cssStyle)
 * Advanced
   * [Layout](/layout)
   * [Theme](/theme)
