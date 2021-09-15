@@ -1,17 +1,17 @@
-# 路由与菜单
+# Router & Menu
 
-RA中的路由为了方便管理，采用中心化方案，在 `router.config.tsx` 统一配置和管理。
+For easy management, routes in RA are centrally configured and managed in `router.config.tsx`.
 
-## 运作模块
+## Operation Module
 
-RA通过框架中的组件实现了以下几个模块：
-- `路由管理` 按照约定的语法在 `router.config.tsx` 中配置路由信息。
-- `菜单渲染` RA的菜单组件 `Navigator.tsx` 会根据路由信息生成菜单。
-- `面包屑` 组件 `PageHeader` 中已内置关联路由的面包屑组件。
+RA implements the following modules through components in the framework:
+- `Route Management` configures routes information in `router.config.tsx` according to the agreed syntax.
+- `Menu rendering` menu component 'navigator.tsx' generates menus based on routing information by `router.config.tsx`.
+- `Breadcrumb` in `PageHeader` component built-in association routing.
 
-### 路由
+### Router
 
-RA中的路由，通过 `router.config.tsx` 统一进行管理。我们提供了以下几个参数，来辅助生成菜单。其具体实现在 `components/RenderRoutes` 。
+Routes in RA are managed through `router.config.tsx`. We provide the following parameters to aid in generating the menu. Its implementation in `components/RenderRoutes` 。
 
 - `name` 对应生成菜单项的文本
 - `icon` 对应菜单的图标，支持iconfont，请以string类型传入，并在setting中配置您的iconfont地址，或传入svg。
